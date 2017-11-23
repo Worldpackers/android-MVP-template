@@ -1,6 +1,6 @@
 <template format="4"
   revision="1"
-  name="MVP Template Activity"
+  name="Worldpackers - MVP Template Activity"
   description="Creates a new MVP Screen - Activity, Presenter and Contract">
 
   <category value="Other" />
