@@ -13,6 +13,7 @@ import timber.log.Timber
 class ${className}Activity : BaseActivity(), ${className}Contract {
     lateinit var dataBinding: Activity${className}Binding
     var presenter: ${className}Presenter? = null
+    private val SCREEN_NAME = "${className}"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,7 @@ class ${className}Activity : BaseActivity(), ${className}Contract {
 
         dataBinding.presenter = presenter
         setupToolbar(dataBinding.toolbar, ${showTitle?c})
+        ScreenLogger(this, SCREEN_NAME).log()
     }
 
     override fun onDestroy() {
